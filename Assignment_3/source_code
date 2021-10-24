@@ -1,0 +1,57 @@
+print('welcome to the flarsheim guesser!')
+print()
+playing = True
+
+while playing is True: 
+  print('please think of a number between and including 1 and 100. ')
+  value = True
+
+  while value is True:
+    three = int(input('What is the remainder when your number is divided by 3 ?'))
+    if three < 0:
+      print('The value entered must be 0 or greater')
+      continue
+    elif three > 2:
+      print('The value entered must be less than 3')
+      continue
+    elif three >= 0:
+      break
+  
+  while value is True:
+    five = int(input('What is the remainder when your number is divided by 5 ?'))
+    if five < 0:
+      print('The value entered must be 0 or greater')
+      continue
+    elif five > 4:
+      print('The value entered must be less than 5')
+      value = False
+    elif five >= 0:
+      break
+  
+  while value is True:
+    seven = int(input('What is the remainder when your number is divided by 7 ?'))
+    if seven < 0:
+      print('The value entered must be 0 or greater')
+      continue
+    elif seven > 6:
+      print('The value entered must be less than 7')
+      value = False
+    elif seven >= 0:
+      break
+  
+  for i in range(1, 101):
+    if i % 3 == three and i % 5 == five and i % 7 == seven:
+      print('your number is ', i)
+      print('How amazing was that!')
+      break
+
+
+  play = input('Do you want to play again? Y to continue, N to quit')
+
+  if play == 'Y' or play == 'y':
+    playing = True
+    print()
+  elif play == 'N' or play =='n':
+    playing = False
+    break
+
