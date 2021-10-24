@@ -5,7 +5,7 @@
 ## Alex Fonseca
 ## ajf8nd@umsystem.edu
 ##
-## PROBLEM : Describe the problem
+## PROBLEM : We have to make a slot machine, and ask the user how much chips will they like to start off with and how much will they wager each spin.
 ##
 ## ALGORITHM : 
 ##      1. Write out the algorithm
